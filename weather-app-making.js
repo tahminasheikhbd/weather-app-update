@@ -55,5 +55,7 @@ form.addEventListener('submit',(e)=>{
   e.preventDefault()
   checkWeather(inputField.value)
 })
-
+btn.addEventListener('click',()=>{
+  checkWeather(inputField.value)
+})
 
