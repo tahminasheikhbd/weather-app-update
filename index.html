@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather-app-making</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="flex justify-center items-center  bg-gradient-to-l  from-teal-500 via-teal-400 to-teal-100 container min-h-screen text-white">
+  <div  class="rounded-lg App-container p-5  bg-gradient-to-tr from-black  via-slate-600 to-slate-300  border min-w-[350px] ">
+    <!-- part-1-start -->
+
+
+    <form  class="placeholder flex gap-2 ">
+
+   <input  id='search' type="text" placeholder="Search..." class="flex-1 h-[40px] bg-transparent/40 outline-none border-slate-500 border p-4 rounded-full text-gray-100 placeholder:text-gray-400">
+      <div  id="btn" class="icon  p-5 rounded-full  text-gray-300 border  grid place-content-center bg-transparent/40 outline-none border-slate-500 size-[20px] cursor-pointer"><ion-icon name="search-outline"></ion-icon></div>
+
+    </form>
+
+
+     <!-- part-1-end -->
+
+      <!--===== part-2-start ====-->
+
+    <img id='images'src="assets/Images/sunny.webp" alt="" class="size-40 grid place-items-center mx-auto mt-4" >
+
+     <!--===== part-3-start ====-->
+     <div id="temp" class="temp text-center text-white text-4xl font-semibold">22&#176;C</div>
+     <!--===== part-4-start ====-->
+     <div id="city-name" class="city-name text-center text-2xl mt-1">Sylhet</div>
+      <!--===== part-5-start ====-->
+      <div class="flex items-center mt-10 flex-col">
+        <div class="feel-like flex gap-1">
+          <span  class="mt-2 font-semibold">Feels-like :</span>
+          <div class="flex items-center">
+            <img src="assets/Images/sunny.webp" alt="" class="size-[40px] flex ">
+            <span id="feels-like" class="text-xl">22&#176;C</span>
+          </div>
+         
+        </div>
+
+        <div class="wind-speed flex gap-1">
+          <span  class="font-semibold">Wind-speed :</span>
+          <span id="wind-speed" class="text-xl">10 km/h</span>
+        </div>
+      </div>
+   
+
+
+  </div>
+
+
+
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="weather-app-making.js"></script>
+  </body>
+</html>
